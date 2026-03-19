@@ -1,20 +1,54 @@
-Your Music Downloader 🎵
-Overview
-Your Music Downloader is a simple yet powerful tool to search, download, and convert YouTube videos into MP3 audio files.
-It features an intuitive GUI and integrates tools like yt-dlp and ffmpeg for seamless performance.
-Features
-- User-friendly GUI for easy searches and downloads.
-- Automatic installation of required tools (yt-dlp, ffmpeg).
-- High-quality MP3 conversion from YouTube videos.
-- Organized downloads in a dedicated downloads/ folder.
+# Your Music Downloader
 
-Requirements
-- Python 3.7 or higher.
-- Internet connection.
+A desktop application for searching and downloading music as MP3 files. Built with Python and Tkinter.
 
-Compatibility
-The executable file is compiled and tested for Windows 11.
-The Python file is also tested exclusively under Windows 11.
-If you encounter any problems, feel free to report them, and we’ll work on fixing issues promptly.
+## Features
 
-This program uses yt-dlp and ffmpeg—these are great tools, and I'm thankful they let us build on top of them.
+- Search by song name or paste a direct URL
+- Automatic conversion to high-quality MP3
+- Clean, dark-themed GUI
+- Downloads saved to a local `downloads/` folder
+
+## Prerequisites
+
+The following tools must be installed and available in your system PATH:
+
+| Tool | Install Guide |
+|------|--------------|
+| **Python** 3.7+ | [python.org](https://www.python.org/downloads/) |
+| **yt-dlp** | [github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp#installation) |
+| **ffmpeg** | [ffmpeg.org](https://ffmpeg.org/download.html) |
+
+### Verifying installation
+
+Open a terminal and run:
+
+```
+yt-dlp --version
+ffmpeg -version
+```
+
+Both commands should print version information without errors.
+
+## Usage
+
+```bash
+python YourMusicDownloader.py
+```
+
+1. Type a song name or paste a URL into the search bar.
+2. Click **Download MP3** (or press Enter).
+3. The MP3 file will appear in the `downloads/` folder.
+
+## Platform Support
+
+Tested on Windows 11. Should work on macOS and Linux with the prerequisites installed.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+## Acknowledgements
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — media downloading
+- [ffmpeg](https://ffmpeg.org/) — audio conversion
